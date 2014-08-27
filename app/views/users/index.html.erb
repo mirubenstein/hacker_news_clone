@@ -1,0 +1,9 @@
+
+<h1>Users Page</h1>
+  <ul>
+    <% @users.each do |usr| %>
+      <li><%= usr.email %></li>
+    <%end%>
+  </ul>
+
+<%= link_to "New User", new_user_path, class: "btn btn-default" %>
