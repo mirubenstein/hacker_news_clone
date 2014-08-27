@@ -2,6 +2,10 @@
 
 <%= form_for(@link) do |f| %>
   <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div class="form-group">
     <%= f.label :url %>
     <%= f.text_field :url %>
   </div>
