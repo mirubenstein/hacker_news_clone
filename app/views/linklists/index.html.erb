@@ -1,7 +1,10 @@
 <h1>Hacker News</h1>
   <ul>
     <% @links.each do |link| %>
-      <li> <a href="<%= link.url%>"><%= link.title%></a> </li>
+      <li><%= link_to link.title, url_for(link.url)%>
+        <ul><li><%= link.vote%> points by <%=link.user%></li></ul>
+      </li>
+
     <%end%>
   </ul>
 
